@@ -4,7 +4,7 @@ title: Calendar
 description: Listing of course modules and topics.
 ---
 
-# Calendar
+# **Meeting Schedule**
 
 {% for module in site.modules %}
 {{ module }}
