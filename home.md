@@ -14,9 +14,15 @@ SIG-ICPC is for anyone who enjoys competitive programming or challenging algorit
 
 You do not need to be a computer science student to participate in our practices or the ICPC competitions -- we welcome everyone who has an interest in learning algorithmic programming!    
 
-In addition to helping in programming competitions, algorithmic problem-solving skills are incredibly helpful for technical interviews. Doing well in ICPC is also a great resume booster for getting a job at a top company.
+Here we foster a friendly environment for students to practice and train for not only ICPC, but also to improve their programming and problem solving skills. These skills prove to be beneficial in technical courses, programming interviews, and real life applications.
+
+
+## What we do:
+- [Weekly Meetings](meetings.md) : Brief practice sessions and walkthroughs for anyone practicing algorithmic programming every Thursday. We have ICPC and other competition prep in longer intervals every Saturday (food provided!)
+- [Tryouts](tryouts.md) : To compete on UIUC's ICPC team!
+- [CS 491-CAP](https://cs491cap-sp25-web.pages.dev/) : A course on Competitive Programming taught by Professor and ICPC Coach [Mattox Beckman](https://mattox.netlify.app/). 
 
 ## Quick Links
-- [Calendar](calendar.md)
+- [Meeting Schedule](meetings.md)
 - [Discord](https://discord.gg/eWcbBd7Vcf)
 - [Sponsor us!](sponsor.md)
