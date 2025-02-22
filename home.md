@@ -18,5 +18,5 @@ In addition to helping in programming competitions, algorithmic problem-solving 
 
 ## Quick Links
 - [Calendar](calendar.md)
-- [Contact](staff.md)
+- [Discord](https://discord.gg/eWcbBd7Vcf)
 - [Sponsor us!](sponsor.md)
