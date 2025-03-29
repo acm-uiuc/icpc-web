@@ -16,6 +16,7 @@ Unless specified, Thursday meetings are 4-6PM at Sidney Lu 2200 and Saturday mee
 
 Please join our [Discord](https://discord.gg/eWcbBd7Vcf) for location and times!
 
-{% for module in site.modules %}
+{% assign sorted_modules = site.modules | sort | reverse %}
+{% for module in sorted_modules %}
 {{ module }}
 {% endfor %}
