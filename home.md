@@ -30,4 +30,4 @@ Both meetings and tryouts are available for anyone to partake in! Please click o
 - [Meeting Schedule](meetings.md)
 - [Discord](https://discord.gg/eWcbBd7Vcf), [Codeforces](https://codeforces.com/group/tKC7z9Nm0A/blog/entry/9265), [Instagram](https://www.instagram.com/icpc.uiuc/)
 - [Sponsor us!](sponsor.md)
-- [CS 491-CAP](https://cs491cap-sp25-web.pages.dev/) : A course on Competitive Programming taught by Professor and ICPC Coach [Mattox Beckman](https://mattox.netlify.app/). 
+- [CS 491-CAP](https://cs491-cap-fa25.pages.dev/) : A course on Competitive Programming taught by Professor and ICPC Coach [Mattox Beckman](https://mattox.netlify.app/). 
