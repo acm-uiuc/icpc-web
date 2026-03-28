@@ -1,0 +1,270 @@
+---
+layout: null
+permalink: /ipl/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPL 2026 — Illinois Programming League</title>
+  <meta name="description" content="Illinois Programming League 2026. A competitive programming contest at UIUC, open to all skill levels. April 25, 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      color: #1a1a2e;
+      background: #fff;
+    }
+
+    /* ── Register bar ── */
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: #13294b;
+      color: #fff;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.75rem 2rem;
+      font-size: 0.9rem;
+    }
+    .topbar a {
+      color: #ff6f3c;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .topbar a:hover { text-decoration: underline; }
+    .topbar .logo-img { height: 28px; vertical-align: middle; margin-right: 0.5rem; }
+    .topbar-left { display: flex; align-items: center; }
+
+    /* ── Hero ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center;
+      padding: 7rem 2rem 4rem;
+      background: #13294b;
+      color: #fff;
+      position: relative;
+    }
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 .accent { color: #ff6f3c; }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 520px;
+      line-height: 1.6;
+      opacity: 0.85;
+      margin-bottom: 0.75rem;
+    }
+    .hero .date {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #ff6f3c;
+      opacity: 1;
+      margin-bottom: 2.5rem;
+    }
+    .register-btn {
+      display: inline-block;
+      background: #ff6f3c;
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 1rem 3rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .register-btn:hover {
+      background: #e85d2c;
+      transform: translateY(-2px);
+    }
+
+    /* ── Shared section ── */
+    .section { padding: 5rem 2rem; }
+    .section-inner { max-width: 960px; margin: 0 auto; }
+    .section h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── About + Poster ── */
+    .about {
+      background: #f7f7fb;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    .about-text p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+    .poster {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+    .poster img {
+      width: 100%;
+      display: block;
+    }
+
+    /* ── Highlights ── */
+    .highlights { background: #fff; }
+    .highlights-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    .highlights-list li {
+      background: #f7f7fb;
+      border-radius: 10px;
+      padding: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333;
+    }
+    .highlights-list li strong {
+      display: block;
+      color: #13294b;
+      margin-bottom: 0.25rem;
+      font-size: 1.05rem;
+    }
+
+    /* ── Sponsors ── */
+    .sponsors {
+      background: linear-gradient(135deg, #e8eaf0 0%, #d5d9e2 50%, #e2e4ea 100%);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    .sponsors .section-inner { display: flex; flex-direction: column; align-items: center; }
+    .sponsors h2 { margin-bottom: 1rem; }
+    .sponsor-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+    }
+    .sponsor-row img {
+      height: 44px;
+      object-fit: contain;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    .sponsor-row img:hover { opacity: 1; }
+
+    /* ── Schedule ── */
+    .schedule { background: #f7f7fb; text-align: center; }
+    .schedule-tbd {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 1.5rem 3rem;
+      border: 2px dashed #c0c4cc;
+      border-radius: 12px;
+      background: #f7f7fb;
+      color: #888;
+      font-size: 1.15rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #13294b;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+    footer a { color: #ff6f3c; text-decoration: none; }
+
+    /* ── Mobile ── */
+    @media (max-width: 700px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .highlights-list { grid-template-columns: 1fr; }
+      .section { padding: 3.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sticky register bar -->
+<div class="topbar">
+  <div class="topbar-left"><img src="/assets/images/ipl-logo.png" alt="IPL Logo" class="logo-img" /><span>Illinois Programming League 2026</span></div>
+
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Illinois Programming<br/><span class="accent">League</span> 2026</h1>
+  <p>A programming contest hosted by ACM-ICPC at UIUC. All skill levels are welcome!</p>
+  <p class="date">April 25, 2026 @ UIUC</p>
+  <a href="https://forms.gle/bfeLxDxJrYakWyF17" class="register-btn">Register</a>
+</section>
+
+<!-- About + Poster -->
+<section class="section about" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>About the Contest</h2>
+        <p>
+          IPL is a team-based programming competition — groups of up to three share a single
+          computer to tackle algorithmic challenges. We offer two divisions: one geared toward
+          newcomers and another for seasoned competitive programmers.
+        <p>
+          Compete for prizes, grab free food and merch, and if your team is the first to solve
+          a problem you'll take home a plushie!
+        </p>
+      </div>
+      <div class="poster">
+        <img src="/assets/images/ipl-flyer.png" alt="IPL 2026 Poster" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Schedule -->
+<section class="section schedule" id="schedule">
+  <div class="section-inner">
+    <h2>Schedule</h2>
+    <div class="schedule-tbd">To be determined &mdash; check back soon!</div>
+  </div>
+</section>
+
+<!-- Sponsors -->
+<section class="section sponsors" id="sponsors">
+  <div class="section-inner">
+    <h2>Sponsors</h2>
+    <div class="sponsor-row">
+      <img src="/assets/images/sponsors/logo-purple.png" alt="CTC" />
+      <img src="/assets/images/sponsors/HRT_Primary_Logo_-_Full_Color.png" alt="HRT" />
+      <img src="/assets/images/sponsors/mathworks.png" alt="MathWorks" />
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p><a href="https://icpc.cs.illinois.edu">SIG ICPC @ UIUC</a> &middot; <a href="https://discord.gg/eWcbBd7Vcf">Discord</a></p>
+</footer>
+
+</body>
+</html>

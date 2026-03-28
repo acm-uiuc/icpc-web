@@ -19,7 +19,7 @@ description: we're so cool omg
 author: SIG ICPC
 baseurl: '/' # the subpath of your site, e.g. /blog
 url: 'https://icpc.cs.illinois.edu' # the base hostname & protocol for your site, e.g. http://example.com
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "ipl_website"]
 
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.10.1
