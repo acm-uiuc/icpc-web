@@ -171,17 +171,62 @@ permalink: /ipl/
 
     /* ── Schedule ── */
     .schedule { background: #f7f7fb; text-align: center; }
-    .schedule-tbd {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 1.5rem 3rem;
-      border: 2px dashed #c0c4cc;
-      border-radius: 12px;
-      background: #f7f7fb;
-      color: #888;
-      font-size: 1.15rem;
-      font-weight: 500;
+    .schedule-location {
+      color: #666;
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+    .schedule-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      max-width: 520px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .schedule-item {
+      display: flex;
+      align-items: stretch;
+      min-height: 52px;
+    }
+    .schedule-time {
+      flex: 0 0 130px;
+      font-weight: 700;
+      color: #13294b;
+      font-size: 0.95rem;
+      padding: 0.75rem 1rem 0.75rem 0;
+      text-align: right;
+      border-right: 3px solid #ff6f3c;
+      position: relative;
+    }
+    .schedule-time::after {
+      content: '';
+      position: absolute;
+      right: -7px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 11px;
+      height: 11px;
+      background: #ff6f3c;
+      border-radius: 50%;
+    }
+    .schedule-event {
+      flex: 1;
+      padding: 0.75rem 0 0.75rem 1.5rem;
+      font-size: 1rem;
+      color: #333;
+    }
+    .schedule-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
       letter-spacing: 0.5px;
+      color: #fff;
+      background: #13294b;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 0.15rem;
     }
 
     /* ── Footer ── */
@@ -245,7 +290,33 @@ permalink: /ipl/
 <section class="section schedule" id="schedule">
   <div class="section-inner">
     <h2>Schedule</h2>
-    <div class="schedule-tbd">To be determined &mdash; check back soon!</div>
+    <p class="schedule-location">Main Room @ DCL 1320 &mdash; </p>
+    <div class="schedule-timeline">
+      <div class="schedule-item">
+        <div class="schedule-time">10:30 – 11:30</div>
+        <div class="schedule-event">Check-in</div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">11:30 – 11:45</div>
+        <div class="schedule-event">Opening Ceremony</div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">11:45 – 12:30</div>
+        <div class="schedule-event">Lunch</div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">12:30 – 1:00</div>
+        <div class="schedule-event">Practice Contest</div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">1:00 – 5:00</div>
+        <div class="schedule-event">Main Contest <span class="schedule-label">Competition</span></div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">5:30 - End</div>
+        <div class="schedule-event">Dinner &amp; Awards</div>
+      </div>
+    </div>
   </div>
 </section>
 
