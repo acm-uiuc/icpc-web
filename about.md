@@ -30,6 +30,20 @@ only ICPC, but also to improve their programming and problem solving skills.
 These skills prove to be beneficial in technical courses, programming
 interviews, and real life applications.
 
+## Meetings
+
+[Help I'm currently at an icpc meeting and I don't know how to get started](start.md)
+
+**SIG-ICPC welcomes everyone!** You do not need to be a certain skill level to attend any meeting!
+
+Thursday meetings are more beginner-friendly practice sessions that cover general topics that are common in technical interviews. 
+
+Saturday meetings are more rigourous and cover more complicated algorithms seen in ICPC and other related competitions. Anyone interested in ICPC is highly encouraged to attend Saturday meetings!
+
+There are snacks at food during every meeting (unless said otherwise)!
+
+Please join our [Discord](https://discord.gg/eWcbBd7Vcf) for location and times!
+
 ## Our Achievements
 
 In the past 17 years, our school has advanced to World Finals 15 times. Help us
